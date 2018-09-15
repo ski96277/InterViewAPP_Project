@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10sp"
+        tools:context=".Activity.MainActivity">
+
+        <EditText
+            android:id="@+id/name_ET_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7sp"
+            android:background="@drawable/edittext_shap"
+            android:gravity="center"
+            android:hint="Name"
+            android:textColorHint="@color/hint_color" />
+
+        <EditText
+            android:id="@+id/email_ET_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7sp"
+            android:background="@drawable/edittext_shap"
+            android:gravity="center"
+            android:hint="E-mail"
+            android:textColorHint="@color/hint_color" />
+
+        <EditText
+            android:id="@+id/phone_ET_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7sp"
+            android:background="@drawable/edittext_shap"
+            android:gravity="center"
+            android:hint="Phone"
+            android:inputType="number"
+            android:textColorHint="@color/hint_color" />
+
+        <Button
+            android:id="@+id/submit_btn_ID"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7sp"
+            android:background="@drawable/buttonshap"
+            android:onClick="sameInformation"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/all_Email_btn_ID"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshap"
+            android:onClick="showALlEmail"
+            android:text="All Email"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+</ScrollView>
